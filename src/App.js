@@ -1,4 +1,5 @@
 import './App.css';
+import profilePhoto from './assets/img.jpg'; // Place a photo named profile.jpg inside /src/assets/
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
       {/* Hero Section */}
       <header className="hero">
+        <img src={profilePhoto} alt="Santhiya" className="profile-photo" />
         <h2>Santhiya MSK</h2>
         <p>
           Pre-final year undergraduate student in Artificial Intelligence and Data Science<br />
@@ -28,7 +30,7 @@ function App() {
       </header>
 
       {/* About Me */}
-      <section id="about" className="section">
+      <section id="about" className="section about-section">
         <h2>About Me</h2>
         <p>
           I am Santhiya, a passionate student pursuing a degree in Artificial Intelligence and Data Science.
@@ -36,10 +38,20 @@ function App() {
           and data analytics. I enjoy building practical solutions using technology and continuously seek opportunities
           to grow both technically and creatively.
         </p>
+        <p>
+          <strong>Education:</strong><br />
+          B.Tech in Artificial Intelligence and Data Science, Anna University – Regional Campus, Coimbatore<br />
+          Higher Secondary – Government Higher Secondary School, Tiruppur
+        </p>
+        <p>
+          <strong>Contact:</strong><br />
+          Email: <a href="mailto:santhiyamsk02@gmail.com">santhiyamsk02@gmail.com</a><br />
+          LinkedIn: <a href="https://www.linkedin.com/in/santhiya-s-4565ab2a2" target="_blank" rel="noreferrer">linkedin.com/in/santhiya</a>
+        </p>
       </section>
 
       {/* Skills */}
-      <section id="skills" className="section colored">
+      <section id="skills" className="section colored skills-section">
         <h2>Skills</h2>
         <ul className="skills-list">
           <li>Python, JavaScript</li>
@@ -52,7 +64,7 @@ function App() {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="section">
+      <section id="experience" className="section experience-section">
         <h2>Work Experience</h2>
         <div className="experience-card">
           <h3>Java Intern - SkyPark ITech</h3>
@@ -64,24 +76,20 @@ function App() {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="section colored">
+      <section id="projects" className="section colored projects-section">
         <h2>Projects</h2>
         <ul>
           <li><strong>Sleep Tracking App</strong> – A mobile app to log sleep data, visualize patterns, and set reminders using SQLite and custom UI.</li>
           <li><strong>SQL Attack Detection</strong> – An LSTM-based model to detect SQL injection attacks from web request data with high accuracy.</li>
-          <li><strong>DeepFake Detection</strong> – a deep learning model using CNN to identify manipulated facial videos and detect deepfakes with high accuracy.</li>
+          <li><strong>DeepFake Detection</strong> – A deep learning model using CNN to identify manipulated facial videos and detect deepfakes with high accuracy.</li>
         </ul>
       </section>
 
       {/* Contact */}
-      <section id="contact" className="section">
+      <section id="contact" className="section contact-section">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:santhiyamsk02@gmail.com">Gmail</a></p>
-        <p>
-          LinkedIn: <a href="https://www.linkedin.com/in/santhiya-s-4565ab2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
-            linkedin.com/in/santhiya
-          </a>
-        </p>
+        <p>Email: <a href="mailto:santhiyamsk02@gmail.com">santhiyamsk02@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/santhiya-s-4565ab2a2" target="_blank" rel="noreferrer">linkedin.com/in/santhiya</a></p>
       </section>
     </div>
   );

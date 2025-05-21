@@ -3,16 +3,12 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #f8f9fc;
   color: #1f2937;
+  scroll-behavior: smooth;
 }
 
 .App {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .navbar {
@@ -27,6 +23,11 @@ body {
   color: white;
 }
 
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -37,6 +38,11 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #facc15;
 }
 
 .hero {
@@ -46,8 +52,13 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.hero span {
-  color: #7c3aed;
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #7c3aed;
+  margin-bottom: 20px;
 }
 
 .section {
@@ -56,7 +67,14 @@ body {
 
 .section h2 {
   color: #6d28d9;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.colored {
+  background-color: #f3f4f6;
 }
 
 .skills-list {
@@ -65,10 +83,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
-}
-
-.colored {
-  background-color: #f3f4f6;
 }
 
 .experience-card {
@@ -84,3 +98,27 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section-specific styles */
+.about-section {
+  background-color: #fffdf7;
+}
+
+.skills-section {
+  background-color: #e0f2fe;
+}
+
+.experience-section {
+  background-color: #fff7ed;
+}
+
+.projects-section {
+  background-color: #fefce8;
+}
+
+.contact-section {
+  background-color: #ecfdf5;
+}
