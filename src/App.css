@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fc;
+  color: #1f2937;
+}
+
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #6d28d9, #9333ea);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ede9fe, #f3e8ff);
+  text-align: center;
+  padding: 70px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hero span {
+  color: #7c3aed;
+}
+
+.section {
+  padding: 50px 30px;
+}
+
+.section h2 {
+  color: #6d28d9;
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.colored {
+  background-color: #f3f4f6;
+}
+
+.experience-card {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #7c3aed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-top: 10px;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
